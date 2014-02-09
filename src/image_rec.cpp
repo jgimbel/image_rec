@@ -19,9 +19,12 @@ public:
     image_rec()
         :  it(nh)
     {
-        sub = it.subscribe("in", 30, &image_rec::imageCallback, this);
-        pub = it.advertise("out", 30);
+        std::string in;
+        nh.param("in",in,in);
+        sub = it.subscribe(in, 30, &image_rec::imageCallback,this);
+        pub = it.advertise("camera/image_raw", 1);
         cv::namedWindow("window");
+
     }
 
     ~image_rec(){
