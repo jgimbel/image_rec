@@ -86,8 +86,8 @@ public:
                 }
             }
 
+        geometry_msgs::Twist twist;
         if(faces.size() != 0){
-            geometry_msgs::Twist twist;
             if(faces[0].x+(faces[0].width/2) < cv_ptr->image.cols/2){
                 twist.linear.y = .01;
             }else {
@@ -98,8 +98,8 @@ public:
             } else {
                 twist.linear.z = -.1;
             }
-            drone.publish(twist);
         }
+        drone.publish(twist);
 
 
         cv::imshow(window_name, cv_ptr->image);
