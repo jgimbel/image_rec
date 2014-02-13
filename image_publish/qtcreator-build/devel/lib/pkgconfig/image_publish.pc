@@ -1,0 +1,8 @@
+prefix=/home/joel/catkin_ws/src/image_rec/image_publish/qtcreator-build/devel
+
+Name: image_publish
+Description: Description of image_publish
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/joel/catkin_ws/src/image_rec/image_publish/qtcreator-build/devel/lib 
+Requires: 

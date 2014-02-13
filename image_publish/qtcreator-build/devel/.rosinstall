@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/joel/catkin_ws/src/image_rec/image_publish/qtcreator-build/devel/setup.sh

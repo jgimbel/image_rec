@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "image_publish")
+set(image_publish_MAINTAINER "joel <joel@todo.todo>")
+set(image_publish_DEPRECATED "")
+set(image_publish_VERSION "0.0.0")
+set(image_publish_BUILD_DEPENDS "roscpp")
+set(image_publish_RUN_DEPENDS "roscpp")
+set(image_publish_BUILDTOOL_DEPENDS "catkin")
